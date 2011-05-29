@@ -8,8 +8,8 @@
    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/ie.css" media="screen, projection" />
    <![endif]-->
 
-   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/style.css" />
-   
+   <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl;?>/css/style.css" />
+   <?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/script.js'); ?>
    <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -52,39 +52,7 @@
     
     <div id="content" role="main">
     <?php echo $content; ?>
-<!--        <article class="post">
-        
-            <h2 class="entry-title"><a href="#">Post heading</a></h2>
-            
-            <figure>
-                <a href="#"><img src="images/thumbnail.jpg" alt="Post thumbnail" class="thumbnail alignleft" /></a>
-            </figure>
-            
-            <div class="entry-content">
-                <p>
-                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. 
-                    Separated they live in <a href="#">Bookmarksgrove right at the coast of the Semantics</a>, a large language ocean. 
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia. 
-                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth. 
-                </p>
-                
-                <p>
-                    Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.
-                    One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. 
-                </p>
-            </div>  .entry-content 
-            
-            <footer class="post-meta">
-                <p>
-                    In <a href="#" rel="category">Category Name</a>
-                    by <span class="author vcard"><a class="url fn n" href="#">Author name</a></span>
-                    on <time datetime="2011-05-14" pubdate>May 14th, 2011</time>
-                </p>
-                <a href="#" class="more-link">Read more</a>
-            </footer>  .post-meta 
-        
-        </article>  .post 1 
-        -->
+
         <hr /> <!-- Post seperator - Not the most optimal solution -->
         
         <article class="post">
@@ -107,26 +75,7 @@
 		)); ?>
         </aside> <!-- .widget -->
         
-<!--        <aside class="widget">
-             Non working search 
-            <form action="#" class="searchform">
-                <input type="search" results="10" placeholder="Search..." />
-                <input type="submit" value="Search" />
-            </form>  .searchform 
-        </aside>  .widget 
-        
-        <aside class="widget">
-            <h3>Widget</h3>
-            
-            <p>
-                Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life.
-            </p>
-            <p>
-                One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. 
-            </p>
-        </aside>  .widget 
-    
-    </aside>  #sidebar -->
+
     
 </div> <!-- #main -->
 <footer id="footer">
@@ -143,10 +92,10 @@
 <!--[if IE]><?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/excanvas.js'); ?><![endif]-->   
 <?php //Yii::app()->clientScript->registerCoreScript('jquery'); ?>
 
-<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->theme->baseUrl.'/js/script.js'); ?>
+
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+    
 
 
 </body>
