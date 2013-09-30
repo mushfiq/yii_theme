@@ -1,0 +1,1 @@
+This is a skeleton theme for YII framework. You can fork and implement your YII theme based on this skeleton
